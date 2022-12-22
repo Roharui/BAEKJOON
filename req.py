@@ -33,7 +33,7 @@ while True:
 
       code_content = request(base + link)
 
-      open(f"{tds[2].text}.py", "w", encoding="utf8").write(code_content.find("textarea").text)
+      open(f"problems/{tds[2].text}.py", "w", encoding="utf8").write(code_content.find("textarea").text)
   
   next_page = content.find("a", id="next_page")
   
